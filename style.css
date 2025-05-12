@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    background: radial-gradient(circle at center, #2c3e50, #000000);
+    color: white;
+  }
+  
+  #game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  #bomb {
+    position: absolute;
+    background: red;
+    color: white;
+    padding: 0.5vw;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+  
+  #score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5em;
+  }
+  
+  #game-over {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
